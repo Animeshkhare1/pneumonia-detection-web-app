@@ -1,0 +1,25 @@
+{
+  "model_file": "pneumonia_cnn.keras",
+  "model_name": "MobileNetV2 transfer",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "img_size": 224,
+  "color_mode": "RGB (3 channels)",
+  "pixel_range_expected_by_model": "float32 in 0-255 (NO manual normalisation; rescaling is inside the model)",
+  "output": "single sigmoid score = model score for class PNEUMONIA (index 1)",
+  "class_names": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "label_mapping": {
+    "0": "NORMAL",
+    "1": "PNEUMONIA"
+  },
+  "threshold": 0.257,
+  "decision_rule": "score >= threshold -> PNEUMONIA, otherwise NORMAL",
+  "custom_objects_needed": false,
+  "disclaimer": "Educational prototype. Model prediction only, not a medical diagnosis."
+}
