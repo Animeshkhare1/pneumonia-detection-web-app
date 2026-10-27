@@ -5,8 +5,8 @@ Educational prototype. Not a medical diagnosis.
 Uses the ORIGINAL model (pneumonia_cnn.keras) and the ORIGINAL settings
 in model_config.json. Nothing is re-trained or re-tuned here.
 """
-import os
 import json
+import os
 
 from flask import Flask, request, jsonify, render_template
 
