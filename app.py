@@ -7,6 +7,7 @@ in model_config.json. Nothing is re-trained or re-tuned here.
 """
 import os
 os.environment["CUDA_VISIBLE_DEVICES"]="-1"
+import tensorflow as tf
 import json
 
 from flask import Flask, request, jsonify, render_template
