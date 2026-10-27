@@ -5,8 +5,9 @@ Educational prototype. Not a medical diagnosis.
 Uses the ORIGINAL model (pneumonia_cnn.keras) and the ORIGINAL settings
 in model_config.json. Nothing is re-trained or re-tuned here.
 """
-import json
 import os
+os.environment["CUDA_VISIBLE_DEVICES"]="-1"
+import json
 
 from flask import Flask, request, jsonify, render_template
 
